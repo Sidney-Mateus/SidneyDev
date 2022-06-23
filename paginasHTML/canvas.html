@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Website</title>
+        <meta charset="UTF-8">
+        <link rel= "shortcut icon" href="../Imagens/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="../CSS/Principal.css">
+        <script type="text/javascript" src="../codigosJs/formulario.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="formulario.html">Contato</a>
+                    </li>
+                    <li>
+                        <a>Sobre</a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="video.html">Video</a>
+                            </li>
+                            <li class="active">
+                                <a>Canvas</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="index.html">Início</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <canvas id="canv" width="700" height="500" style="border:2px solid #ffffff;">
+            </canvas>
+            <script type="text/javascript">
+                var can = document.getElementById("canv");
+                var cl = can.getContext("2d");
+                var grade = cl.createRadialGradient(250, 250, 100, 200, 200, 500);
+                grade.addColorStop(0, "blue");
+                grade.addColorStop(1, "white");
+                cl.fillStyle = grade;
+                cl.fillRect(0, 0, 700, 500);
+
+                cl.font = "50px arial";
+                cl.strokeText("Meu Canvas!", 200, 250);
+            </script>
+        </section>
+        <footer>
+            <p>Direito exclusivo do autor Sidney Mateus @2022</p>
+        </footer>
+    </body>
+</html>

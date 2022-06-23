@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+   position: relative;
+    height: 38px;
+    top: 0;
+}
+footer{
+    position: fixed;
+    height: 20px;
+    bottom: 0;
+}
+header, footer{
+    background-color:rgb(67, 125, 201);
+    font-family: 'Times New Roman', Times, serif;
+}
+.menu{
+    list-style-type: none;
+    float: right;
+    display: inline;
+}
+.menu li{
+    position: relative;
+    float: right;
+}
+.active{
+    background-color: rgb(83, 96, 116);
+}
+.menu li a{
+    color: rgb(17, 30, 43);
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+.menu li a:hover, .submenu li a:hover{
+    background:rgb(6, 4, 109);
+    color:white;
+}
+a:visited{
+    color:blueviolet;
+    text-decoration: none;
+}
+.submenu{
+    position:absolute;
+    top:38px;
+    left:0;
+    background-color:rgb(67, 125, 201);
+    display:none;
+}
+.submenu li{
+    border:1px solid white;
+    display:block;
+    width:100px;
+}
+.menu li:hover .submenu{
+    display:block;
+}
+
+body{
+    background-image: url(https://cdn.pixabay.com/photo/2017/11/04/21/30/autumn-2918906_960_720.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+section{
+    width: auto;
+    height: 400px;
+    margin-top: 10px;
+}
+article{
+    color: ghostwhite;
+}
+form{
+    background-color: white;
+    display: block;
+    border: 2px solid blue;
+    text-align: left;
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 25px;
+    width: 400px;
+    height: auto;
+}
+figure{
+    border: 1px solid black;
+    padding: 4px;
+    display: flex;
+    flex-flow: column;
+    float: left;
+}
+figcaption{
+    background-color: rgb(63, 9, 9);
+    color: aliceblue;
+    text-align: center;
+}
+

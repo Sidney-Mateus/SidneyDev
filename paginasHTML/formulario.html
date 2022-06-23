@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Website</title>
+        <meta charset="UTF-8">
+        <link rel= "shortcut icon" href="../Imagens/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="../CSS/Principal.css">
+        <script type="text/javascript" src="../codigosJs/formulario.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a class="active">Contato</a>
+                    </li>
+                    <li>
+                        <a>Sobre</a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="video.html">Video</a>
+                            </li>
+                            <li>
+                                <a href="canvas.html">Canvas</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="index.html">Início</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <form action="#" method="post" name="forms">
+                <p>
+                    <label for="cab"><h3>Formulario de Contato</h3></label>
+                </p>
+                <br>
+                <p>
+                    <label for="nome">Insira seu nome: </label>
+                    <input type="text" name="nome" id="nome">
+                </p>
+                <br>
+                <p>
+                    <label for="idade">Quantos anos você tem? </label>
+                    <input type="number" name="idade" id="idade">
+                </p>
+                <br>
+                <p>
+                    <label for="email">Gmail para contato: </label>
+                    <input type="email" name="email" id="email" size="40" maxLength="40" required placeholder="usuario@gmail.com" pattern=".+@gmail.com">
+                </p>
+                <br>
+                <p>
+                    <label for="data">Insira a data de hoje: </label>
+                    <br>
+                    <input type="date" name="data" id="data">
+                </p>
+                <br>
+                <p>
+                    <label for="obs">Comentários: </label>
+                    <br>
+                    <textarea name="obs" id="obs"></textarea>
+                </p>
+                <br>
+                <div>
+                    <input type="button" value="Enviar" onclick="EnviarDados(this.form)">
+                    <button type="reset" value="limpar">Limpar</button>
+                </div>
+            </form>
+            <br>
+            <article>
+                <p><h4>Confirmação de Dados</h4></p>
+                <p id="nomec"></p>
+                <p id="idadec"></p>
+                <p id="emailc"></p>
+                <p id="datac"></p>
+                <p id="obsc"></p>
+            </article>
+        </section>
+        <footer>
+            <p>Direito exclusivo do autor Sidney Mateus @2022</p>
+        </footer>
+    </body>
+</html>
